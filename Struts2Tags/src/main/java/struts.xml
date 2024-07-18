@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+	"http://struts.apache.org/dtds/struts-2.5.dtd">
+	
+<struts>
+	<package name="register" extends="struts-default">
+		<action name="registerAction" class="com.manikandan.struts2tags.RegisterAction">
+			<result name="success">/welcome.jsp</result>
+			<result name="input">/register.jsp</result>
+		</action>
+		<action name="formLoadAction" method="initializeFormFields" class="com.manikandan.struts2tags.RegisterAction">
+		    <interceptor-ref name="params"/>
+		    <interceptor-ref name="prepare"/>
+		    <interceptor-ref name="basicStack"/>
+			 
+			<result name="input">/register.jsp</result>
+		</action>
+	</package>
+</struts>
