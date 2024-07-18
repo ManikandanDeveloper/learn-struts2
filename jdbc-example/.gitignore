@@ -1,0 +1,27 @@
+# compiled class file
+*.class
+
+# Eclipse project files
+.project
+.settings/
+.classpath
+.factorypath
+
+# Eclipse Java Build Path file
+bin/
+target/
+
+# Eclipse Java Debug file
+.java
+
+# Eclipse auto-generated file
+*.java~
+
+# Eclipse Core file
+.metadata
+
+# Eclipse launch configuration
+*.launch
+
+# Eclipse workspace file
+.lock
